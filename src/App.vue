@@ -1,0 +1,51 @@
+<template>
+  <div id="app">
+    <router-view/>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
+
+<style>
+  *{
+    padding: 0;
+    border:0;
+    margin:0;
+  }
+  .el-header, .el-footer {
+    background-color: #B3C0D1;
+    color: #333;
+    height: 60px;
+    /* line-height: 60px; */
+  }
+  
+  .el-aside {
+    background-color: #D3DCE6;
+    color: #333;
+    height: calc(100vh - 60px);
+    overflow: scroll;
+  }
+  
+  .el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    height: calc(100vh - 120px);
+  }
+  
+  body > .el-container {
+    margin-bottom: 40px;
+  }
+  
+  .el-container:nth-child(5) .el-aside,
+  .el-container:nth-child(6) .el-aside {
+    line-height: 260px;
+  }
+  
+  .el-container:nth-child(7) .el-aside {
+    line-height: 320px;
+  }
+</style>
